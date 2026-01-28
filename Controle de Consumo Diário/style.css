@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    background-color: #f86060;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section {    
+    background: rgb(126, 126, 236);
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+}
+
+.bebidas {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.caixas {
+    width: 50px;
+    background: rgb(243, 88, 88);
+}
+
+::placeholder{
+    color: aliceblue;
+}
+select{
+    width: 100px;
+    height: 150px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;          /* espaço entre as sections */
+}
+
+
+.container section {
+  flex: 1;            /* todas com a mesma largura */
+  padding: 20px;
+  background: #f86060;
+  text-align: center;
+  height: 190px;
+}
+
+.button {
+    display:inline-block;
+    width: 70px;
+    margin: 2px;
+}
+
+

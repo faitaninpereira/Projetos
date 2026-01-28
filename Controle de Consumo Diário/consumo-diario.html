@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Controle de Consumo Diário</strong></h1>
+    </header>
+
+    <section>
+
+    <div class="container2">
+        
+        <div class="coluna">
+        <span class="bebidas">Water</span> <input type="number" class="caixas" id="water" placeholder="ml">
+        <button id="btnWater">Add</button>
+        </div>
+
+        <div class="coluna">
+        <span class="bebidas">Coffee</span> <input type="number" class="caixas" id="coffee" placeholder="ml"> 
+        <button id="btnCoffee">Add</button>
+        </div>
+
+        <div class="coluna">
+        <span class="bebidas">Refrigerator</span> <input type="number" class="caixas" id="refrigerator" placeholder="ml">
+        <button id="btnRefrigerator">Add</button>
+        </div>
+
+        <div class="coluna">
+        <span class="bebidas">Vitamins</span> <input type="number" class="caixas" id="vitamins" placeholder="ml">
+        <button id="btnVitamins">Add</button>
+        </div>
+            
+    </div> 
+
+    <div class="container">
+        <section>
+            <select class="select" id="listaW" size="6"></select><br>
+            <button class="button" id="btnRemoveWa">Remove</button><br>
+            <button class="button" id="btnConcludeWa">Conclude</button>
+            <p id="msgW"></p>
+        </section>
+
+        <section>
+            <select class="select" id="listaC" size="6"></select><br>
+            <button class="button" id="btnRemoveCo">Remove</button><br>
+            <button class="button" id="btnConcludeCo">Conclude</button>
+            <p id="msgC"></p>
+        </section>
+
+        <section>
+            <select class="select" id="listaR" size="6"></select><br>
+            <button class="button" id="btnRemoveRe">Remove</button><br>
+            <button class="button" id="btnConcludeRe">Conclude</button>
+            <p id="msgR"></p>
+        </section>
+
+        <section>
+            <select class="select" id="listaV" size="6"></select><br>
+            <button class="button" id="btnRemoveVi">Remove</button><br>
+            <button class="button" id="btnConcludeVi">Conclude</button>
+            <p id="msgV"></p>
+        </section>
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
