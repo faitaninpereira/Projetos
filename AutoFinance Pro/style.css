@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    background: linear-gradient(90deg, #0ea5e9, #22c55e);
+    color: #020617;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr 0.8fr 1.2fr 1fr;
+    gap: 14px;
+    align-items: center;
+    padding: 22px;
+    margin: 22px;
+    background: linear-gradient(135deg, #020617, #020617, #020617, #020617, #020617, #020617, #020617, #020617);
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.55);
+}
+
+
+input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px (56,189,248,0.2);
+}
+
+select {
+    background: #020617;
+    color: #e5e7eb;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    padding: 6px;
+}
+
+/* Botões */
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.25s;
+}
+
+/* Botões primários */
+#btnName, #btnValue, #btnNameGastos, #btnValueGastos {
+    background: linear-gradient(135deg, #22c55e, #0ea5e9);
+    color: #020617;
+    width: 100px;
+}
+
+/* Botões remover */
+#btnRemoveName, #btnRemoveValue {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+}
+
+/* Hover effects */
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Scroll bonito nos selects */
+select::-webkit-scrollbar {
+    width: 6px;
+}
+select::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 10px;
+}
+select::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
